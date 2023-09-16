@@ -15,19 +15,24 @@
   list-style-type:none ;
 
 }
-a{
+.link{
   font-size: 30px;
   font-weight:bolder;
   color:black;
   text-decoration:none;
   transition: 0.5s;
 }
-a:hover{
+.link:hover{
    
   font-size: 36px;
   margin:-2px;
 
 }
+.linkdes{
+  text-decoration:none;
+  color:black;
+}
+
 .Titleimages{
   display: flex;
   flex-direction: row;
@@ -44,14 +49,11 @@ a:hover{
 .smallimage img{
   border-radius: 3%;
 }
-
 .smallimage img:hover{
   box-shadow: 4px 4px 4px 4px lightgrey ;
 }
 .side{
- 
   border-bottom: 2px red;
-
 }
 .borderbottom{
   height:50px;
@@ -59,10 +61,7 @@ a:hover{
   border-bottom: 5px solid red;
 margin-bottom: 20px;
 margin-left: 5em;
-
-
 }
-
 .bigimage img{
   height:500px;
   width:785px;
@@ -81,8 +80,6 @@ margin-left: 5em;
   text-align: center;
   width:460px;
 } 
-
-
 
 #icons{
   /* social media icons */
@@ -201,11 +198,81 @@ margin: 1%;
   width:980px;
   height:160px;
 
-
 }
 .Adtext{
   margin-top: 40%;
 }
 .Adtext2{
   margin-top: 90%;
+}
+/* .hamberger{
+  height: 50px;
+  width:50px;
+  border-radius: 50%;
+
+} */
+.fa-solid{
+  background-color:skyblue;
+  height: 40px;
+  width:40px;
+  border-radius: 50%;
+  text-align: center;
+  padding-top:10px ;
+  font-size: 30px;
+  border: 2px solid black;
+
+}
+.fa-solid{
+  display:none; 
+}
+
+
+
+.display{
+  display:none;
+}
+.hambergerlinks {
+  display: none;
+}
+
+
+@media screen and (max-width:500px) and (min-width:280px){
+
+  #navlink ul{
+    display:none;
+  }
+  
+
+ ul{
+  list-style-type: none;
+}
+.display{
+  display:block;
+  grid-column: 3/4;
+}
+.hambergerlinks{
+  height:400px;
+  width:auto;
+  background-color: aquamarine;
+  display: none;
+  
+  }
+  .show{
+    display:block;
+  }
+  .hide{
+    display:none;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
 }

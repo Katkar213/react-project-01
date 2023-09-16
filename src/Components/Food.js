@@ -1,32 +1,18 @@
 
 import React, { useContext } from "react";
 import {Store} from "../ContextApi/ContextApi"
-import { useNavigate } from "react-router-dom";
+
+import {NavLink} from "react-router-dom"
 
 
 function Food(){
     const [received] = useContext(Store);
     console.log(received);
-    const Navi=useNavigate();
    
     return(
         <>
        
-        {/* {received.filter((item)=>item.Category==="Food").map((item,index)=>{
-      return(
-    
-        <div key={index} id="mapdata">
-        <h1>Name of Food:{item.Title}</h1>
-        <img src={item.image} alt=" not found"
-        height="300px" width="400px"/>
-        <h2>{item.Description}</h2>
-      </div>
-      )
-      
-      
-    })} */}
-
-
+       
           
 <div className="maincontainer">
         {/* left side parent */}
@@ -37,7 +23,9 @@ function Food(){
 
             .map((item, index) => {
               return (
-                <div key={index} onClick={()=>Navi("/detailpage")}>
+                <div key={index} >
+                <NavLink to={`/detailpage/${item.id}`} className="linkdes">
+                    
                   <div id="parent2">
                     <img
                       id="leftsideimage"
@@ -51,7 +39,10 @@ function Food(){
                       <p>{item.Description}</p>
                     </div>
                   </div>
+               
+                </NavLink>
                 </div>
+            
               );
             })}
           
@@ -70,6 +61,7 @@ function Food(){
             .map((item, index) => {
               return (
                 <div id="parent2" key={index} >
+                 <NavLink to={`/detailpage/${item.id}`} className="linkdes">
                   <img
                     src={item.image}
                     alt="not found"
@@ -79,6 +71,7 @@ function Food(){
                   <div id="Description">
                     <p>{item.Description}</p>
                   </div>
+                  </NavLink>
                 </div>
               );
             })}
@@ -100,6 +93,7 @@ function Food(){
           .map((item, index) => {
             return (
               <div className="middlecontainerimage" key={index}>
+                <NavLink to={`/detailpage/${item.id}`} className="linkdes">
                 <img
                   src={item.image}
                   alt="not found"
@@ -110,6 +104,7 @@ function Food(){
                 <div id="Description">
                   <p>{item.Description}</p>
                 </div>
+                </NavLink>
               </div>
             );
           })}
