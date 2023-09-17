@@ -16,7 +16,7 @@ function Fitness(){
 
         <div id="Lparent1">
           <h1 className="side side2">Latest Articles</h1>
-          {received .filter((item) => item.Category === "Fitness")
+          {received.filter((item) => item.Category ==="Fitness")
   
             .map((item, index) => {
               return (
