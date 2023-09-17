@@ -39,7 +39,7 @@ function Detailpage(){
                    <NavLink id="iconlink"><i className="fa-brands fa-github"></i></NavLink>
             </div> 
             
-              <h3 className="detail-Description"></h3>
+              <h3 className="detail-Description">Description</h3>
              
               </div>
         )

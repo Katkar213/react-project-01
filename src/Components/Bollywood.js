@@ -15,7 +15,7 @@ function Bollywood() {
 
         <div id="Lparent1">
           <h1 className="side side2">Latest Articles</h1>
-          {received .filter((item) => item.Category === "Bollywood")
+          {received.filter((item) => item.Category==="Bollywood")
 
             .map((item, index) => {
               return (
