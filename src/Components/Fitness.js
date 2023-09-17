@@ -1,5 +1,6 @@
 import React, { useContext } from "react";
 import {Store} from "../ContextApi/ContextApi"
+import {NavLink} from "react-router-dom"
 
 
 function Fitness(){
@@ -8,19 +9,6 @@ function Fitness(){
     return(
         <>
  
-        {/* {received.filter((item)=>item.Category==="Fitness").map((item,index)=>{
-      return(
-    
-        <div key={index} id="mapdata">
-        <h1>Name of Fitness Accessories:{item.Title}</h1>
-        <img src={item.image} alt=" not found"
-        height="300px" width="400px"/>
-        <h2>{item.Description}</h2>
-      </div>
-      )
-      
-      
-    })} */}
 
           
 <div className="maincontainer">
@@ -29,10 +17,11 @@ function Fitness(){
         <div id="Lparent1">
           <h1 className="side side2">Latest Articles</h1>
           {received .filter((item) => item.Category === "Fitness")
-
+  
             .map((item, index) => {
               return (
                 <div key={index}>
+                   <NavLink to={`/detailpage/${item.id}`} className="linkdes">
                   <div id="parent2">
                     <img
                       id="leftsideimage"
@@ -46,6 +35,7 @@ function Fitness(){
                       <p>{item.Description}</p>
                     </div>
                   </div>
+                  </NavLink>
                 </div>
               );
             })}
@@ -65,6 +55,7 @@ function Fitness(){
             .map((item, index) => {
               return (
                 <div id="parent2" key={index}>
+                   <NavLink to={`/detailpage/${item.id}`} className="linkdes">
                   <img
                     src={item.image}
                     alt="not found"
@@ -74,6 +65,7 @@ function Fitness(){
                   <div id="Description">
                     <p>{item.Description}</p>
                   </div>
+                  </NavLink>
                 </div>
               );
             })}
@@ -95,6 +87,7 @@ function Fitness(){
           .map((item, index) => {
             return (
               <div className="middlecontainerimage" key={index}>
+                 <NavLink to={`/detailpage/${item.id}`} className="linkdes">
                 <img
                   src={item.image}
                   alt="not found"
@@ -106,6 +99,7 @@ function Fitness(){
                
                   <p>{item.Description}</p>
                 </div>
+                </NavLink>
               </div>
             );
           })}

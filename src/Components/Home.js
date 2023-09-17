@@ -1,6 +1,7 @@
 import { useContext } from "react";
 import { Store } from "../ContextApi/ContextApi";
 import "../App.css";
+import {NavLink} from "react-router-dom"
 function Home() {
   const [received] = useContext(Store);
   return (
@@ -42,6 +43,7 @@ function Home() {
           .map((item, index) => {
             return (
               <div className="middlecontainerimage" key={index}>
+                   <NavLink to={`/detailpage/${item.id}`} className="linkdes">
                 <img
                   src={item.image}
                   alt="not found"
@@ -53,6 +55,7 @@ function Home() {
                 <h2>{item.Title}</h2>
                   <p>{item.Description}</p>
                 </div>
+                </NavLink>
               </div>
             );
           })}
@@ -69,6 +72,7 @@ function Home() {
             .map((item, index) => {
               return (
                 <div key={index}>
+                     <NavLink to={`/detailpage/${item.id}`} className="linkdes">
                 
                   <div id="parent2">
                     
@@ -85,6 +89,7 @@ function Home() {
                       <p>{item.Description}</p>
                     </div>
                   </div>
+                  </NavLink>
                 </div>
               );
             })}
@@ -109,6 +114,7 @@ function Home() {
             .map((item, index) => {
               return (
                 <div id="parent2" key={index}>
+                     <NavLink to={`/detailpage/${item.id}`} className="linkdes">
                   <img
                     src={item.image}
                     alt="not found"
@@ -118,6 +124,7 @@ function Home() {
                   <div id="Description">
                     <p>{item.Description}</p>
                   </div>
+                  </NavLink>
                 </div>
               );
             })}
@@ -131,6 +138,7 @@ function Home() {
           .map((item, index) => {
             return (
               <div className="middlecontainerimage" key={index}>
+                   <NavLink to={`/detailpage/${item.id}`} className="linkdes">
                 <img
                   src={item.image}
                   alt="not found"
@@ -142,6 +150,7 @@ function Home() {
                  <h2>{item.Title}</h2>
                   <p>{item.Description}</p>
                 </div>
+                </NavLink>
               </div>
             );
           })}

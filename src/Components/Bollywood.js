@@ -2,6 +2,7 @@
 
 import React, { useContext } from "react";
 import {Store} from "../ContextApi/ContextApi"
+import {NavLink} from "react-router-dom"
 
 function Bollywood() {
   const [received] = useContext(Store);
@@ -9,26 +10,6 @@ function Bollywood() {
 
   return (
     <>
-    {/* <h1 id="componentTitle">Data from Bollywood</h1>
-    {received.filter((item)=>item.Category==="Bollywood").map((item,index)=>{
-      return(
-    
-        <div key={index} id="mapdata">
-      
-        <h1>Name of Movie:{item.Title}</h1>
-        <img src={item.image} alt=" not found"
-        height="300px" width="400px"/>
-        <h2>{item.Description}</h2>
-      </div>
-      )
-      
-      
-    })}  */}
-
-
-
-
-    
 <div className="maincontainer">
         {/* left side parent */}
 
@@ -39,6 +20,7 @@ function Bollywood() {
             .map((item, index) => {
               return (
                 <div key={index}>
+                  <NavLink to={`/detailpage/${item.id}`} className="linkdes" >
                   <div id="parent2">
                     <img
                       id="leftsideimage"
@@ -52,6 +34,7 @@ function Bollywood() {
                       <p>{item.Description}</p>
                     </div>
                   </div>
+                  </NavLink>
                 </div>
               );
             })}
@@ -71,15 +54,22 @@ function Bollywood() {
             .map((item, index) => {
               return (
                 <div id="parent2" key={index}>
+                  
+                  <NavLink to={`/detailpage/${item.id}`} className="linkdes" >
+                  
                   <img
                     src={item.image}
                     alt="not found"
                     height="100px"
                     width="130px"
                   />
-                  <div id="Description">
-                    <p>{item.Description}</p>
+                  <div id="Description " className="column-direction">
+                  <h3>{item.Title}</h3>
+                    <p>{item.Description.slice(0,90)}</p>
+                   
                   </div>
+                  <h3 id="number">{index+1}</h3>
+                  </NavLink>
                 </div>
               );
             })}
@@ -101,6 +91,8 @@ function Bollywood() {
           .map((item, index) => {
             return (
               <div className="middlecontainerimage" key={index}>
+                <NavLink to={`/detailpage/${item.id}`} className="linkdes linkdes2" >
+                
                 <img
                   src={item.image}
                   alt="not found"
@@ -112,6 +104,7 @@ function Bollywood() {
                
                   <p>{item.Description}</p>
                 </div>
+                </NavLink>
               </div>
             );
           })}

@@ -1,4 +1,15 @@
-#navlink{
+.side2{
+  color: black;
+}
+.side2:hover{
+  color:red;
+}
+   
+   /************ Home component *****************/
+   
+   /******************* Nav bar..... *****************/
+  
+  #navlink{
   box-shadow: 0px 4px 2px lightgray;
   height:6rem;
   width:auto;
@@ -28,11 +39,8 @@
   margin:-2px;
 
 }
-.linkdes{
-  text-decoration:none;
-  color:black;
-}
 
+/*************** Title images ****************************/
 .Titleimages{
   display: flex;
   flex-direction: row;
@@ -52,16 +60,6 @@
 .smallimage img:hover{
   box-shadow: 4px 4px 4px 4px lightgrey ;
 }
-.side{
-  border-bottom: 2px red;
-}
-.borderbottom{
-  height:50px;
-  width:140px;
-  border-bottom: 5px solid red;
-margin-bottom: 20px;
-margin-left: 5em;
-}
 .bigimage img{
   height:500px;
   width:785px;
@@ -69,8 +67,11 @@ margin-left: 5em;
   margin-bottom: 2rem;
 }
 .bigimage img:hover{
-  box-shadow: 4px 4px 4px 4px lightgrey ;
+  box-shadow: 0px 0px 4px 6px lightgrey ;
 }
+
+
+/***************** middle container-3 horizontal images****************/
 .middlecontainer{
   display: flex;
   justify-content: space-around;
@@ -80,14 +81,74 @@ margin-left: 5em;
   text-align: center;
   width:460px;
 } 
+#Description2{
+  width:460px;
+  height:200px;
+  text-align: center;
+
+}
+
+
+/***********maincontainer having left and right side parent********/
+.maincontainer{
+  display:flex;
+  flex-direction: row;
+   gap:8rem; 
+}
+
+
+     /************ left side parent... *************/
+#Lparent1{
+  display: flex;
+  flex-direction: column;
+  gap:15px;
+margin: 1%;
+  
+}
+#leftsideimage{
+  height:120px;
+  width:170px;
+  border-radius: 10px;
+  box-shadow: 3px 3px 3px 3px lightgray;
+}
+#parent2{
+  display: flex;
+  gap:20px;
+  width:650px;
+  
+}
+/* description2 contain in left side parent also */
+
+
+/********************** Right side parent -Top post ****************/
+.Rparent1{
+  display: flex;
+  flex-direction: column;
+  gap:15px;
+margin: 1%;
+}
+.middlecontainerright{
+  display: flex;
+  flex-direction: column;
+}
+#number{
+  font-size: 55px;
+  margin-top: 0px;
+  color: lightgrey;
+}
+
+/* **********************Detail Page*************** */
 
 #icons{
   /* social media icons */
-  width:auto;
+  width:200px;
   display:flex;
-  gap:30px;
+ 
   justify-content: space-between;
   
+}
+.fa-github{
+  color:black;
 }
 #iconlink{
   font-size: 2em;
@@ -102,71 +163,8 @@ color:blue;
 .fa-facebook{
   color:skyblue;
 }
-footer{
-  margin-top: 20px;
-  box-shadow:0px -4px lightgray;
-}
-span{
-  font-size: 17px;
-  
-}
-#title{
-  text-align:center;
-  color: black;
-  font-size: 30px;
-}
-#parent2{
-  display: flex;
-  gap:20px;
-  width:650px;
-  
-}
-#leftsideimage{
-  height:120px;
-  width:170px;
- 
-  /* border:2px solid black; */
-  border-radius: 10px;
-  box-shadow: 3px 3px 3px 3px lightgray;
-}
-#Lparent1{
-  display: flex;
-  flex-direction: column;
-  gap:15px;
-margin: 1%;
-  
-}
-#Description{
-  width:430px;
-  height:130px;
 
-}
-#Description2{
-  width:460px;
-  height:200px;
-  text-align: center;
-
-}
-#boximg{
-  border-radius: 8px;
-}
-.maincontainer{
-  display:flex;
-  flex-direction: row;
-   gap:8rem; 
-}
-.Rparent1{
-  display: flex;
-  flex-direction: column;
-  gap:15px;
-margin: 1%;
-
-  
-}
-.middlecontainerright{
-  display: flex;
-  flex-direction: column;
-}
+/* **************Advertisement1******************/
 .Advertise{
   height:700px;
   width:690px;
@@ -174,43 +172,12 @@ margin: 1%;
   margin-top: 4em;
   text-align: center;
 }
-.bigimage2 img{
-  height:370px;
-  width:600px;
-  border-radius: 3%;
-  margin-bottom: 2rem;
-}
-.Advertise2{
-  height:60%;
-  width:640px;
-  border: 2px solid black;
-  margin-top: 4em;
-  margin-bottom: 2rem;
-  text-align: center;
-}
-.side2{
-  color: black;
-}
-.side2:hover{
-  color:red;
-}
-#Description3{
-  width:980px;
-  height:160px;
-
-}
 .Adtext{
   margin-top: 40%;
 }
-.Adtext2{
-  margin-top: 90%;
-}
-/* .hamberger{
-  height: 50px;
-  width:50px;
-  border-radius: 50%;
 
-} */
+
+/************************hamberger menu***********************/
 .fa-solid{
   background-color:skyblue;
   height: 40px;
@@ -228,13 +195,109 @@ margin: 1%;
 
 
 
+/* start from here other components excluding home component */
+
+
+
+.linkdes{
+  text-decoration:none;
+  color:black;
+  display:flex;
+  gap:25px;
+}
+
+
+.side{
+  border-bottom: 2px red;
+}
+.borderbottom{
+  height:50px;
+  width:140px;
+  border-bottom: 5px solid red;
+margin-bottom: 20px;
+margin-left: 5em;
+}
+
+
+footer{
+  margin-top: 20px;
+  box-shadow:0px -4px lightgray;
+}
+span{
+  font-size: 17px;
+  
+}
+#title{
+  text-align:center;
+  color: black;
+  font-size: 30px;
+}
+
+
+
+#Description{
+  width:430px;
+  height:130px;
+  display:flex;
+  text-align: left;
+
+}
+.column-direction{
+  flex-direction: column;
+  width:390px;
+}
+
+#boximg{
+  border-radius: 8px;
+}
+
+
+.bigimage2 img{
+  height:370px;
+  width:600px;
+  border-radius: 3%;
+  margin-bottom: 2rem;
+}
+.Advertise2{
+  height:60%;
+  width:640px;
+  border: 2px solid black;
+  margin-top: 4em;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+#Description3{
+  width:980px;
+  height:160px;
+
+}
+
+.Adtext2{
+  margin-top: 90%;
+}
+ /* .hamberger{
+  height: 50px;
+  width:50px;
+  border-radius: 50%;
+
+}  */
+
+
+
+
 .display{
   display:none;
 }
 .hambergerlinks {
   display: none;
 }
+.linkdes2{
+flex-direction: column;
+}
 
+
+/*************Mobile media query*********************/
 
 @media screen and (max-width:500px) and (min-width:280px){
 
