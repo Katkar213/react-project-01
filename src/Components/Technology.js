@@ -19,7 +19,7 @@ function Technology(){
 
         <div id="Lparent1">
           <h1 className="side side2">Latest Articles</h1>
-          {received .filter((item) => item.Category === "technology")
+          {received.filter((item) => item.Category === "technology")
 
             .map((item, index) => {
               return (
