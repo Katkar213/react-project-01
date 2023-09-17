@@ -10,6 +10,7 @@ function Detailpage(){
 
     const [received] = useContext(Store);
     const {id}=useParams();
+    const id2=parseInt(id)
     
     console.log(id);
 
@@ -18,7 +19,7 @@ function Detailpage(){
     return(
 
         <>
-      {received.filter((item)=>item.id==id)
+      {received.filter((item)=>item.id===id2)
       .map((item,index)=>{
         return(
             <div key={index}>
