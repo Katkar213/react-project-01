@@ -31,11 +31,12 @@ const ContextApi=(props)=>{
         Description:"Shah Rukh Khan's Jawan has created a buzz with its thrilling Prevue which was released recently and showcased King Khan is never-seen-before avatar. The film is set to be released on 7 September and is expected to become another blockbuster."
       },
       { id:3,
-        Title:"Vivah",
+        Title:"Padmavat",
         Category:"Bollywood",
-        image:"https://wallpaperaccess.com/full/7943175.jpg",
-        Description:"Vivah is a 2006 Indian romantic drama film, written and directed by Sooraj R. Barjatya. StarringAmrita Rao and Shahid Kapoor, it was produced and distributed by Rajshri Productions. Vivah tells the story of two individuals, and relates their journey from engagement to marriage and aftermath."
+       image:"https://static-koimoi.akamaized.net/wp-content/new-galleries/2018/01/padmaavat-movie-review-2.jpg",
+       Description:"Based on the epic poem of the same Title by Malik Muhammad Jayasi, it stars Deepika Padukone as Rani Padmavati, a Rajput queen known for her beauty, wife of Maharawal Ratan Singh, played by Shahid Kapoor. Sultan Alauddin Khalji, played by Ranveer Singh, hears of her beauty and attacks her kingdom to enslave her."
     },
+   
     {
         id:4,
         Title:"Lagan",
@@ -47,7 +48,7 @@ const ContextApi=(props)=>{
         id:5,
         Title:"Baghban",
         Category:"Bollywood",
-        image:"https://bollywoodfever.co.in/wp-content/uploads/2020/10/Baghban.jpg",
+        image:"https://www.meinstyn.com/wp-content/uploads/2016/12/Baghban-Movie-Poster-Salman-Khan-Amitabh-Bachchan-Hema-Malini-Full-HD-Desktop-Wallpaper-1019x550.jpg",
         Description:"It tells the story of an elderly couple, Raj (Amitabh Bachchan) and Pooja (Hema Malini), who have been married for 40 years. After Raj retires, they reunite with their four sons (Aman Verma, Samir Soni, Saahil Chadha, and Nasir Khan) to discuss who will support them."
 
     },
@@ -69,10 +70,10 @@ const ContextApi=(props)=>{
        },
          {
         id:8,
-        Title:"Padmavat",
+        Title:"Vivah",
         Category:"Bollywood",
-       image:"https://igmedia.blob.core.windows.net/igmedia/telugu/reviews/padmavat-movie-review.jpg",
-       Description:"Based on the epic poem of the same Title by Malik Muhammad Jayasi, it stars Deepika Padukone as Rani Padmavati, a Rajput queen known for her beauty, wife of Maharawal Ratan Singh, played by Shahid Kapoor. Sultan Alauddin Khalji, played by Ranveer Singh, hears of her beauty and attacks her kingdom to enslave her."
+        image:"https://e0.pxfuel.com/wallpapers/99/211/desktop-wallpaper-vivah-vivah-shahid-kapoor-amrita-rao.jpg",
+        Description:"Vivah is a 2006 Indian romantic drama film, written and directed by Sooraj R. Barjatya. StarringAmrita Rao and Shahid Kapoor, it was produced and distributed by Rajshri Productions. Vivah tells the story of two individuals, and relates their journey from engagement to marriage and aftermath."
       },
       {
         id: 9,
@@ -85,35 +86,35 @@ const ContextApi=(props)=>{
         id: 10,
         Title: "Kabhi Khushi Kabhie Gham",
         Category: "Bollywood",
-      image: "https://1.bp.blogspot.com/-LPLQwiSuHwE/YNoyxGgiczI/AAAAAAAAAH0/idObtlOXFBkkqenIN63SfgAO9gV1viKZgCLcBGAsYHQ/s320/0812254.CINE.lby.jpg",
+      image: "https://moviekoop.com/Images/Cover_Photos/kabhi-kushi-kabhi-gham.jpg",
       Description: "Kabhi Khushi Kabhie Gham is a family drama film directed by Karan Johar. It tells the story of the rich Raichand family and the relationships and conflicts within."
     },
     {
         id: 11,
         Title: "Gully Boy",
         Category: "Bollywood",
-        image: "https://n5a7d2f2.stackpathcdn.com/wp-content/uploads/2019/02/1546595622_ranveer-singh-alia-bhatt-gully-boy.jpg",
+        image: "https://akm-img-a-in.tosshub.com/indiatoday/images/story/201902/gully-boy-movie-review_0.jpeg?size=690:388",
         Description: "Gully Boy is a musical drama film that showcases the journey of a young rapper from the streets of Mumbai. It stars Ranveer Singh as the aspiring rapper and Alia Bhatt as his love interest."
     },
     {
         id: 12,
         Title: "Koi Mil Gaya",
         Category: "Bollywood",
-        image: "https://images.news18.com/ibnkhabar/uploads/2023/06/KOI-MIL-GAYA.jpg?im=Resize,width=700,aspect=fit,type=normal",
+        image: "https://images.cnbctv18.com/wp-content/uploads/2023/08/Koi-Mil-Gaya-poster-1019x573.jpg?impolicy=website&width=617&height=264",
         Description: "Koi Mil Gaya is a science fiction film that tells the story of Rohit, a mentally challenged young man who befriends an extraterrestrial being. Hrithik Roshan plays the lead role."
     },
     {
         id: 13,
         Title: "Kuch Kuch Hota Hai",
         Category: "Bollywood",
-        image: "https://static.toiimg.com/thumb/msid-78686481,imgsize-73498,width-400,resizemode-4/78686481.jpg",
+        image: "https://i0.wp.com/urbanasian.com/wp-content/uploads/2018/10/Kuch-Kuch-Hota-Hai.jpeg?resize=768%2C465&ssl=1",
         Description: "Kuch Kuch Hota Hai is a romantic drama film directed by Karan Johar. It explores the love triangle between Rahul, Tina, and Anjali, played by Shah Rukh Khan, Rani Mukerji, and Kajol, respectively."
     },
     {
         id: 14,
         Title: "PK",
         Category: "Bollywood",
-        image: "https://images.hindustantimes.com/rf/image_size_640x362/HT/p1/2014/09/17/Incoming/Pictures/1265016_Wallpaper2.jpg",
+        image: "https://moviekoop.com/Images/Cover_Photos/PK.jpg",
         Description: "PK is a satirical comedy-drama film that explores the journey of an alien named PK, played by Aamir Khan, who arrives on Earth and questions religious and social norms."
     },
     {
@@ -308,9 +309,9 @@ const ContextApi=(props)=>{
           {
             id: 41,
             Category:  "Food",
-            Title: "Macaroni and Cheese",
-            image: "https://www.staysnatched.com/wp-content/uploads/2016/12/southern-mac-and-cheese-3-1024x750.jpg.webp",
-            Description: "Relive your childhood with our Macaroni and Cheese. Creamy, cheesy goodness in every bite."
+            Title: "Pav Bhaji",
+            image: "https://i0.wp.com/s3.ap-south-1.amazonaws.com/images.salonyscookbook.com/pav-bhaji-recipe/pav-bhaji-recipe13.jpg?w=1200",
+            Description: "Pav Bhaji – a spicy curry of mixed vegetables (bhaji) cooked in a special blend of spices and served with soft buttered pav (bread bun shallow fried in butter), is any Indian food lover’s dream. "
           },
           {
             id: 42,
@@ -387,7 +388,7 @@ const ContextApi=(props)=>{
               id: 52,
               Title: "Advanced Camera Systems",
               Category: "technology",
-              image: "https://media.istockphoto.com/id/871704344/photo/mobile-connect-with-security-camera.jpg?s=612x612&w=0&k=20&c=ZqLmm0tORU-rGt0DC9bw3lORPZv6z3CUzWtVTOtpCC8=",
+              image: "https://www.passionateinmarketing.com/wp-content/uploads/2023/09/EZVIZ-C1C-B-1-1-768x432.jpg",
               Description: "Capture life's moments with our advanced camera systems. From DSLRs to mirrorless cameras, our technology empowers your creativity."
             },
             {
@@ -408,7 +409,7 @@ const ContextApi=(props)=>{
               id: 55,
               Title: "Artificial Intelligence (AI)",
               Category: "technology",
-              image: "https://www.codingdojo.com/blog/wp-content/uploads/ai-v2-img3.jpg",
+              image: "https://media.istockphoto.com/id/1452604857/photo/businessman-touching-the-brain-working-of-artificial-intelligence-automation-predictive.jpg?s=2048x2048&w=is&k=20&c=-dkoxqirWcLDhkIjVgkLfRXdNHqCJdPKswM7tkjTcN0=",
               Description: "Harness the power of artificial intelligence. Our AI technology is revolutionizing industries, from healthcare to finance."
             },
             {
@@ -436,7 +437,7 @@ const ContextApi=(props)=>{
               id: 59,
               Title: "Blockchain Revolution",
               Category: "technology",
-              image: "https://miro.medium.com/v2/resize:fit:786/format:webp/1*zXgPGB749l2yDvPoJAeR5w.png",
+              image: "https://governmentbusiness.co.uk/sites/default/files/styles/large/public/adobestock_447222256.jpg?itok=Dh6foi3o",
               Description: "Join the blockchain revolution. Secure transactions, digital currencies, and decentralized applications are changing the way we do business."
             },
             {
@@ -453,7 +454,7 @@ const ContextApi=(props)=>{
                 id: 61,
                 Title: "Fitness Tracker",
                 Category: "Fitness",
-                image: "https://www.seasons.com/wp-content/uploads/2022/07/seniorfitnesstrackers-1024x691.jpg",
+                image: "https://media-cldnry.s-nbcnews.com/image/upload/t_fit-1240w,f_auto,q_auto:best/newscms/2023_25/3612032/230621-fitness-tracker-bd-2x1.jpg",
                 Description: "Track your daily activity, heart rate, and workouts with our advanced fitness tracker. Achieve your fitness goals and stay motivated."
               },
               {
@@ -516,7 +517,7 @@ const ContextApi=(props)=>{
                 id: 70,
                 Title: "Fitness Apps",
                 Category: "Fitness",
-                image: "https://cdn.dribbble.com/users/6647053/screenshots/20014791/media/a49860b80a8b3ce839f9fc422ffb4c00.png?resize=1000x750&vertical=center",
+                image: "https://techexactly.com/wp-content/uploads/2019/02/banner.jpg.webp",
                 Description: "Stay on track with your fitness goals using our fitness apps. Access workouts, nutrition plans, and progress tracking on your phone."
               },
               {

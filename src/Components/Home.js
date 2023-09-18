@@ -43,17 +43,17 @@ function Home() {
           .map((item, index) => {
             return (
               <div className="middlecontainerimage" key={index}>
-                   <NavLink to={`/detailpage/${item.id}`} className="linkdes">
+                   <NavLink to={`/detailpage/${item.id}`} className="linkdes linkdes2">
                 <img
                   src={item.image}
                   alt="not found"
-                  height="300px"
-                  width="370px"
+                  height="250px"
+                  width="390px"
                   id="boximg"
                 />
                 <div id="Description2">
                 <h2>{item.Title}</h2>
-                  <p>{item.Description}</p>
+                  <p>{item.Description.slice(0,90)}</p>
                 </div>
                 </NavLink>
               </div>
@@ -77,7 +77,8 @@ function Home() {
                   <div id="parent2">
                     
                     <img
-                      id="leftsideimage"
+                      id="leftsideimage "
+                      className="imageleftside"
                       src={item.image}
                       alt="not found"
                       height="100px"
@@ -86,7 +87,7 @@ function Home() {
                    
                     <div id="Description2">
                     <h4>{item.Title}</h4> 
-                      <p>{item.Description}</p>
+                      <p>{item.Description.slice(0,110)+"..."}</p>
                     </div>
                   </div>
                   </NavLink>
@@ -109,7 +110,7 @@ function Home() {
           <h1>Top Post</h1>
           {received
             .filter(
-              (item) => item.id >= 77 && item.id <= 80 && item.Category === "Home"
+              (item) => item.id >= 77 && item.id <= 82 && item.Category === "Home"
             )
             .map((item, index) => {
               return (
@@ -118,8 +119,9 @@ function Home() {
                   <img
                     src={item.image}
                     alt="not found"
-                    height="100px"
-                    width="130px"
+                    height="130px"
+                    width="210px"
+                    id="rightsideimage"
                   />
                   <div id="Description">
                     <p>{item.Description}</p>
@@ -138,7 +140,7 @@ function Home() {
           .map((item, index) => {
             return (
               <div className="middlecontainerimage" key={index}>
-                   <NavLink to={`/detailpage/${item.id}`} className="linkdes">
+                   <NavLink to={`/detailpage/${item.id}`} className="linkdes linkdes2">
                 <img
                   src={item.image}
                   alt="not found"
@@ -148,7 +150,7 @@ function Home() {
                 />
                 <div id="Description2">
                  <h2>{item.Title}</h2>
-                  <p>{item.Description}</p>
+                  <p>{item.Description.slice(0,90)}</p>
                 </div>
                 </NavLink>
               </div>

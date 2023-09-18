@@ -36,10 +36,10 @@ function Food(){
                     />
                     <div id="Description3">
                       <h4>{item.Title}</h4>
-                      <p>{item.Description}</p>
+                      <p>{item.Description.slice(0,100)+"..."}</p>
                     </div>
                   </div>
-               
+                  
                 </NavLink>
                 </div>
             
@@ -56,6 +56,30 @@ function Food(){
           <h1 className="side2">Top Post</h1>
           {received
             .filter(
+              (item) => item.id === 34 && item.Category === "Food"
+            )
+            .map((item, index) => {
+              return (
+                <div id="parent2"  key={index}>
+                    <NavLink to={`/detailpage/${item.id}`} className="linkdes special-div">
+                  <img
+                  id="special-img"
+                    src={item.image}
+                    alt="not found"
+                    height="240px"
+                    width="390px"
+                  />
+                  <div  className="special-description">
+                    <p>{item.Description.slice(0,140)+"..."}</p>
+                    <h3 id="number">{index+1}</h3>
+                  </div>
+                 
+                  </NavLink>
+                </div>
+              );
+            })}
+          {received
+            .filter(
               (item) => item.id >= 35 && item.id <= 38 && item.Category === "Food"
             )
             .map((item, index) => {
@@ -69,8 +93,9 @@ function Food(){
                     width="130px"
                   />
                   <div id="Description">
-                    <p>{item.Description}</p>
+                    <p>{item.Description.slice(0,100)+"..."}</p>
                   </div>
+                  <h3 id="number">{index+2}</h3>
                   </NavLink>
                 </div>
               );
@@ -87,28 +112,7 @@ function Food(){
     
       </div>
 
-      <h1 className="side2">Latest</h1>
-      <div className="middlecontainer">
-        {received.filter((item) =>  item.id >= 77 && item.id <= 79 && item.Category === "Home"  )
-          .map((item, index) => {
-            return (
-              <div className="middlecontainerimage" key={index}>
-                <NavLink to={`/detailpage/${item.id}`} className="linkdes">
-                <img
-                  src={item.image}
-                  alt="not found"
-                  height="200px"
-                  width="350px"
-                  id="boximg"
-                />
-                <div id="Description">
-                  <p>{item.Description}</p>
-                </div>
-                </NavLink>
-              </div>
-            );
-          })}
-      </div>
+     
     </>
     )
 }
