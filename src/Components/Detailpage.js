@@ -33,6 +33,7 @@ function Detailpage(){
 
 
       <div className="ParentTop">
+        
         <div className="leftDetail">
           <div className="Like-share">
           <h2><i className="fa-regular fa-thumbs-up none2"></i>
@@ -67,6 +68,7 @@ function Detailpage(){
           <h2>{item.Description}</h2>
          
         </div>
+        
         <div className="rightDetails"></div>
       </div>
              

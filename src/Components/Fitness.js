@@ -98,7 +98,7 @@ function Fitness(){
         <div className="Advertise2 side2"><h2 className="Adtext2">Advertisement</h2></div>
         <div className="bigimage2">
           <img
-            src="https://akm-img-a-in.tosshub.com/indiatoday/images/story/202306/617f7444-525e-4d9d-8cd6-11987e43ce86_1-sixteen_nine.jpg?VersionId=Rj0w2RAz3_O4kUSaNrRJeYcUqYUWrkWV&size=690:388"
+            src="https://image.myupchar.com/5247/webp/yoga-in-hindi.webp"
             alt="not found"
           ></img>
         </div>

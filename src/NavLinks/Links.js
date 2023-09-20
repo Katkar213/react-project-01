@@ -77,8 +77,57 @@ function Links(){
      
 </Routes>
 </ContextApi>
+
+
+{/* **************************************Footer************************************* */}
 <footer>
-  <p>Ketan Katkar</p>
+ 
+<div className="footermedia">
+<div >
+    <ul className="footerlinks">
+        <li>
+    <NavLink style={({isActive})=>({color:(isActive)?"red":"black"})} to="/" className="link" >Home</NavLink></li>
+        <li>
+    <NavLink style={({isActive})=>({color:(isActive)?"red":"black"})} to="/Hollywood" className="link" >Hollywood</NavLink></li>
+        <li>
+    <NavLink style={({isActive})=>({color:(isActive)?"red":"black"})} to="/Bollywood" className="link" >Bollywood</NavLink></li>
+
+        
+</ul>
+    </div>
+    <div >
+      <ul className="footerlinks">
+      <li>
+    <NavLink style={({isActive})=>({color:(isActive)?"red":"black"})} to="/Technology"  className="link">Technology </NavLink></li>
+        <li>
+    <NavLink style={({isActive})=>({color:(isActive)?"red":"black"})} to="/Fitness"  className="link">Fitness</NavLink></li>
+        <li>
+        <NavLink style={({isActive})=>({color:(isActive)?"red":"black"})} to="/Food"  className="link">Food</NavLink></li>
+      </ul>
+    </div>
+    <div id="copyright-phone">
+    <p><i className="fa-regular fa-copyright"></i> 2023  Ketan Katkar</p>
+  <p><i className="fa-solid fa-phone"></i>8888888888</p>
+  
+    </div>
+  <div id="footer-aboutus">
+   <h3>About Site:</h3>
+   <p>These is react blog project<br/>
+       made using React dynamic routing <br/>
+       concepts for tricks follow us<br/>
+   </p>
+    
+  </div>
+  <div className="pro-mediaicon">
+                  <h3>Follow us:</h3> 
+                  
+                  <NavLink id="iconlink"><i className="fa-brands fa-square-instagram" to="https://www.instagram.com/"></i></NavLink>
+                   <NavLink id="iconlink"><i className="fa-brands fa-linkedin"></i></NavLink>
+                   <NavLink id="iconlink"><i className="fa-brands fa-facebook"></i></NavLink>
+                   <NavLink id="iconlink"><i className="fa-brands fa-github"></i></NavLink>
+          </div>
+          
+          </div>
 </footer>
 
 </BrowserRouter>

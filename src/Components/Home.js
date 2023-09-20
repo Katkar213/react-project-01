@@ -134,7 +134,7 @@ function Home() {
     </div>
       </div>
 
-      <h1>Latest</h1>
+      <h1 className="side">Latest</h1>
       <div className="middlecontainer">
         {received.filter((item) =>   item.id >= 76 && item.id <= 78 && item.Category === "Home"   )
           .map((item, index) => {
