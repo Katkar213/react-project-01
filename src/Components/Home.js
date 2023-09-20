@@ -85,7 +85,7 @@ function Home() {
                       width="180px"
                     />
                    
-                    <div id="Description2">
+                    <div id="Description2 " className="home-left-description">
                     <h4>{item.Title}</h4> 
                       <p>{item.Description.slice(0,110)+"..."}</p>
                     </div>
@@ -110,11 +110,11 @@ function Home() {
           <h1>Top Post</h1>
           {received
             .filter(
-              (item) => item.id >= 77 && item.id <= 82 && item.Category === "Home"
+              (item) => item.id >= 80 && item.id <= 85 && item.Category === "Home"
             )
             .map((item, index) => {
               return (
-                <div id="parent2" key={index}>
+                <div id="parent2" className="parent2-top-post" key={index}>
                      <NavLink to={`/detailpage/${item.id}`} className="linkdes">
                   <img
                     src={item.image}
@@ -123,8 +123,8 @@ function Home() {
                     width="210px"
                     id="rightsideimage"
                   />
-                  <div id="Description">
-                    <p>{item.Description}</p>
+                  <div id="Description"  className="home-right-description">
+                    <p>{item.Description.slice(0,90)}</p>
                   </div>
                   </NavLink>
                 </div>

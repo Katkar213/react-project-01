@@ -11,7 +11,7 @@
   
   #navlink{
   box-shadow: 0px 4px 2px lightgray;
-  height:6rem;
+  height:auto;
   width:auto;
   display: grid;
   grid-template-columns:4rem 4fr 4rem;
@@ -20,6 +20,7 @@
   grid-column:2/3;
   width:auto;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
 }
 #navlink ul {
@@ -33,19 +34,15 @@
   text-decoration:none;
   transition: 0.5s;
 }
-.link:hover{
-   
-  font-size: 36px;
-  margin:-2px;
 
-}
 
 /*************** Title images ****************************/
 .Titleimages{
   display: flex;
   flex-direction: row;
-  gap:9em;
-  margin: 1%;
+justify-content: space-between;
+ 
+  flex-wrap: wrap;
   
 }
 .smallimage{
@@ -68,6 +65,12 @@
 }
 .bigimage img:hover{
   box-shadow: 0px 0px 4px 6px lightgrey ;
+}
+footer{
+  height:4rem;
+  color:black;
+  background-color: lightgray;
+  text-align: center;
 }
 
 
@@ -94,7 +97,9 @@
 .maincontainer{
   display:flex;
   flex-direction: row;
-   gap:8rem; 
+   justify-content: space-around;
+   flex-wrap:wrap ;
+   width:auto;
 }
 
 
@@ -103,7 +108,7 @@
   display: flex;
   flex-direction: column;
   gap:15px;
-margin: 1%;
+/* margin: 1%; */
   
 }
 #leftsideimage{
@@ -159,20 +164,89 @@ margin: 1%;
 }
 .fa-github{
   color:black;
+  font-size: 30px;
 }
 #iconlink{
   font-size: 2em;
 }
 .fa-square-instagram{
 color:red;
+font-size: 30px;
 
 }
 .fa-linkedin{
 color:blue;
+font-size: 30px;
 }
 .fa-facebook{
   color:skyblue;
+  font-size: 30px;
 }
+
+.ParentTop {
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;
+  padding: 20px; 
+}
+
+.leftDetail {
+  flex: 1; 
+  max-width: 200px;
+  cursor: pointer;
+}
+
+.detail {
+  flex: 2; 
+  text-align: center;
+  max-width: 550px; 
+  width: 100%;
+}
+
+.detail img {
+  max-width: 100%; 
+  height: auto; 
+}
+
+.rightDetails {
+  flex: 1;
+  max-width: 200px; 
+}
+.profile-icons{
+  display: flex;
+  justify-content: space-between;
+}
+.profile{
+  font-size: 30px;
+ color: black;
+ margin-bottom: 1rem;
+}
+.profile span{
+  font-size: 20px;
+  font-weight: bold;
+}
+.pro-mediaicon{
+  display: flex;
+  gap:10px;
+
+}
+.detail img {
+  max-width: 100%;
+  height: 400px;
+}
+.Detailpageimg{
+  border-radius: 10px;
+}
+.Like-share{
+  display: flex;
+  flex-direction: column;
+  margin-left:140px;
+  gap:40px;
+  width:200px;
+  
+}
+
+
 
 /* **************Advertisement1******************/
 .Advertise{
@@ -202,7 +276,24 @@ color:blue;
 .fa-solid{
   display:none; 
 }
+.none{
+ background-color: white;
+ border: none;
+ font-size: 38px;
+ margin-bottom: 2px;
 
+}
+.none:hover{
+  color: blue;
+  
+}
+.none2{
+  font-size: 35px;
+}
+.none2:hover{
+  color: blue;
+  
+}
 
 
 /* start from here other components excluding home component */
@@ -242,6 +333,9 @@ span{
   color: black;
   font-size: 30px;
 }
+/* #title span{
+
+} */
 
 
 
@@ -269,8 +363,8 @@ span{
   margin-bottom: 2rem;
 }
 .Advertise2{
-  height:60%;
-  width:640px;
+  height:90%;
+  width:360px;
   border: 2px solid black;
   margin-top: 4em;
   margin-bottom: 2rem;
@@ -318,17 +412,16 @@ color:black;
 }
 .special-div{
   flex-direction: column;
-  /* border: 2px solid red; */
   width:650px;
   align-items: center;
   
 }
 .special-description{
-  width:642px;
+  width:630px;
   height:130px;
   display:flex;
   text-align: left;
-  gap:4vw;
+  gap:3vw;
   flex-direction:row ;
   /* border: 2px solid black; */
   
@@ -338,15 +431,33 @@ color:black;
 }
 
 
+
+
 /*************Mobile media query*********************/
 
 @media screen and (max-width:500px) and (min-width:280px){
+body{
+
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+  align-items: center;
+}
+.maincontainer{
+  flex-direction: column;
+  justify-content: space-between;
+}
 
   #navlink ul{
     display:none;
   }
+  #navlink{
+    width:99.2%;
+  }
   
-
+li:hover{
+  background-color: rgb(237, 255, 255);
+}
  ul{
   list-style-type: none;
 }
@@ -357,24 +468,130 @@ color:black;
 .hambergerlinks{
   height:400px;
   width:auto;
-  background-color: aquamarine;
+  background-color: white;
+  border:2px solid black;
+  border-radius: 10px;
   display: none;
   
   }
+ 
   .show{
     display:block;
   }
   .hide{
     display:none;
   }
+/*............................. Home page.................*/
+.Titleimages{
+  flex-direction: column;
+  gap:20px;
+}
+
+.bigimage img{
+  height:370px;
+  width:365px;
+  border-radius: 3%;
+  margin-bottom: 2rem;
+}
+.smallimage img{
+  width:365px;
+}
+.smallimage{
+  gap:20px;
+}
+.middlecontainer{
+  flex-direction: column;
+ 
+}
+#boximg{
+  width:365px;
+}
+#Description2{
+  width:360px;
+  height:auto;
+}
+#leftsideimage {
+  height:140px;
+  width:110px;
+}
+
+#parent2{
+/* border:2px solid red; */
+gap:15px;
+width:365px;
+height:auto;
+flex-direction: row;
+}
+.Advertise{
+  width:365px;
+
+}
+.Adtext{
+  font-size: 20px;
+}
+.bigimage2 img{
+  width:365px;
+}
+#Description{
+  width:220px;
+}
+.imageleftside{
+  height:110px;
+  width:120px;
+}
+.home-left-description{
+  border:2px solid red;
+  width:220px;
+  height:auto;
+}
+#rightsideimage{
+  height:100px;
+  width:100px;
+}
+.home-right-description{
+  border:2px solid green;
+  width:190px;
+  height:auto;
+  
+}
+
+#Description {
+  width: 230px;
+}
+footer{
+  width:99.8%;
+}
+.linkdes3 img{
+  height: 100px;
+  width: 100px;
+}
+.linkdes3 p{
+  width:190px;
+}
+.linkdes3{
+  gap:2px;
+}
+.special-div{
+  align-items: flex-start; 
+  
+}
+#special-img{
+  width:365px;
+}
+.special-description{
+  width:365px;
+}
+#Description3{
+width:350px;
+}
 
 
-
-
-
-
-
-
+.linkdes2{
+  width:360px;
+}
+.middlecontainerimage{
+  width:360px;
+}
 
 
 

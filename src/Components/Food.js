@@ -85,7 +85,7 @@ function Food(){
             .map((item, index) => {
               return (
                 <div id="parent2" key={index} >
-                 <NavLink to={`/detailpage/${item.id}`} className="linkdes">
+                 <NavLink to={`/detailpage/${item.id}`} className="linkdes linkdes3">
                   <img
                     src={item.image}
                     alt="not found"

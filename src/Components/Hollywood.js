@@ -55,21 +55,21 @@ function Hollywood(){
             .map((item, index) => {
               return (
                 <div id="parent2"  key={index}>
-                    <NavLink to={`/detailpage/${item.id}`} className="linkdes special-div">
-                  <img
-                  id="special-img"
-                    src={item.image}
-                    alt="not found"
-                    height="240px"
-                    width="390px"
-                  />
-                  <div  className="special-description">
-                    <p>{item.Description.slice(0,140)+"..."}</p>
-                    <h3 id="number">{index+1}</h3>
-                  </div>
-                 
-                  </NavLink>
-                </div>
+                <NavLink to={`/detailpage/${item.id}`} className="linkdes special-div">
+              <img
+              id="special-img"
+                src={item.image}
+                alt="not found"
+                height="240px"
+                width="390px"
+              />
+              <div  className="special-description">
+                <p>{item.Description.slice(0,140)+"..."}</p>
+                <h3 id="number">{index+1}</h3>
+              </div>
+             
+              </NavLink>
+            </div>
               );
             })}
 
@@ -81,21 +81,20 @@ function Hollywood(){
             )
             .map((item, index) => {
               return (
-                <div id="parent2"  key={index}>
-                    <NavLink to={`/detailpage/${item.id}`} className="linkdes">
-                  <img
-                  
-                    src={item.image}
-                    alt="not found"
-                    height="100px"
-                    width="130px"
-                  />
-                  <div id="Description">
-                    <p>{item.Description.slice(0,100)+"..."}</p>
-                  </div>
-                  <h3 id="number">{index+2}</h3>
-                  </NavLink>
-                </div>
+                <div id="parent2" key={index}>
+                <NavLink to={`/detailpage/${item.id}`} className="linkdes linkdes3">
+               <img
+                 src={item.image}
+                 alt="not found"
+                 height="100px"
+                 width="130px"
+               />
+               <div id="Description">
+                 <p>{item.Description.slice(0,100)+"..."}</p>
+               </div>
+               <h3 id="number">{index+2}</h3>
+               </NavLink>
+             </div>
               );
             })}
         </div>
