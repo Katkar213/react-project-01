@@ -36,8 +36,7 @@ function Detailpage(){
         
         <div className="leftDetail">
           <div className="Like-share">
-          <h2><i className="fa-regular fa-thumbs-up none2"></i>
-            LIKE</h2>
+          <h2><i className="fa-regular fa-thumbs-up none2"></i>LIKE</h2>
           <h2><i class="fa-solid fa-share-nodes none"></i>Share</h2>
           </div>
         </div>

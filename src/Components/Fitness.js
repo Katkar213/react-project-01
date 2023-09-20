@@ -97,10 +97,16 @@ function Fitness(){
         </div>
         <div className="Advertise2 side2"><h2 className="Adtext2">Advertisement</h2></div>
         <div className="bigimage2">
-          <img
-            src="https://image.myupchar.com/5247/webp/yoga-in-hindi.webp"
+        {received.filter((item)=>item.id===65).map((item,index)=>{
+             return(
+              <div>
+                 <img
+            src={item.image}
             alt="not found"
           ></img>
+              </div>
+            )
+          })}
         </div>
     </div>
     
