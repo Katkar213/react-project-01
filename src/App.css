@@ -873,6 +873,9 @@ footer ul{
   .middlecontainer{
     flex-direction: column;
   }
+  #Description2{
+    width:70vw;
+  }
   .linkdes2{
     width:99vw;
   }
@@ -881,13 +884,19 @@ footer ul{
     text-align: center;
   }
   #Description2{
-    width:70%;
+    width:85%;
     margin: auto;
+    height: 13vh;
+  }
+  #Lparent1{
+    margin-top: -10px;
   }
   #boximg{
-    width:80%;
-    height:30vh;
+    width:100%;
+    height:38vh;
+    margin: auto;
     display: block;
+    margin-left: 9px;
   }
   .smallimage{
     flex-direction: row;
@@ -895,6 +904,9 @@ footer ul{
   }
   .smallimage img{
    width:46%;
+  }
+  #parent2{
+    width:96vw;
   }
 
 .special-description {
@@ -934,7 +946,7 @@ width:99vw;
   #leftsideimage{
   width:23vw;
   display: block;
-  height: 12vh;
+  height: 13vh;
   }
   .home-left-description{
    display: block;
@@ -944,10 +956,43 @@ width:99vw;
     width:90vw;
   }
   .special-description2{
+    width:90vw;
+    text-align: center;
+  }
+  .linkdes2{
+    width:95vw;
+  }
+  #special-img{
     width:84vw;
+    margin: auto;
+    height: 30vh;
+  }
+  .bigimage2 img{
+    width: 90vw;
+   
+  }
+  .bigimage2{
+    margin: auto;
+  }
+  #Lparent1{
+    margin: auto;
+  }
+
+  .special-div{
+    width:100vw;
+    margin: auto;
   }
   .linkdes{
-    width:85vw;
+    width:93vw;
+    gap:0px;
+  }
+  .Advertise{
+    margin: auto;
+    width:93vw;
+    margin-top: 20px;
+  }
+  .home-right-discription{
+    width:96vw;
   }
  
   
