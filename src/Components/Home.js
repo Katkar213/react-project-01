@@ -67,7 +67,7 @@ function Home() {
 
         <div id="Lparent1">
           <h1 className="side">Latest Articles</h1>
-          {received.filter((item) => item.id >= 77 && item.id <= 82 &&item.Category === "Home")
+          {received.filter((item) => item.id >= 77 && item.id <= 83 &&item.Category === "Home")
 
             .map((item, index) => {
               return (
@@ -107,10 +107,38 @@ function Home() {
         {/* popular right side parent */}
       
         <div className="Rparent1">
-          <h1>Top Post</h1>
+          <h1 className="side">Top Post</h1>
           {received
             .filter(
-              (item) => item.id >= 80 && item.id <= 85 && item.Category === "Home"
+              (item) => item.id === 80 && item.Category === "Home"
+            )
+            .map((item, index) => {
+              return (
+                <div id="parent2"  key={index}>
+                <NavLink to={`/detailpage/${item.id}`} className="linkdes special-div">
+              <img
+              id="special-img"
+                src={item.image}
+                alt="not found"
+                height="240px"
+                width="390px"
+              />
+            <div className="rightsidetitle-decription">
+              <h3 className="center">{item.Title}</h3>
+              <div  className="special-description special-description2">
+               
+                <p>{item.Description.slice(0,140)+"..."}</p>
+                <h3 id="number">{index+1}</h3>
+              </div>
+              </div>
+             
+              </NavLink>
+            </div>
+              );
+            })}
+          {received
+            .filter(
+              (item) => item.id >= 81 && item.id <= 84 && item.Category === "Home"
             )
             .map((item, index) => {
               return (
@@ -122,9 +150,14 @@ function Home() {
                     height="130px"
                     width="210px"
                     id="rightsideimage"
+                    className="homerightsideimage"
                   />
+                  <div className="rightsidetitle-decription">
+              <h3 className="center">{item.Title}</h3>
                   <div id="Description"  className="home-right-description">
                     <p>{item.Description.slice(0,90)}</p>
+                    <h3 id="number">{index+2}</h3>
+                  </div>
                   </div>
                   </NavLink>
                 </div>
@@ -134,7 +167,9 @@ function Home() {
     </div>
       </div>
 
+      <div className="borderbottom">
       <h1 className="side">Latest</h1>
+      </div>
       <div className="middlecontainer">
         {received.filter((item) =>   item.id >= 76 && item.id <= 78 && item.Category === "Home"   )
           .map((item, index) => {

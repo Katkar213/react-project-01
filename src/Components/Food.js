@@ -53,7 +53,7 @@ function Food(){
         {/* popular right side parent */}
       
         <div className="Rparent1">
-          <h1 className="side2">Top Post</h1>
+          <h1 className="side2 side">Top Post</h1>
           {received
             .filter(
               (item) => item.id === 34 && item.Category === "Food"

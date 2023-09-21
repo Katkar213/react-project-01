@@ -29,9 +29,10 @@ function Hollywood(){
                       height="100px"
                       width="160px"
                     />
+                    
                     <div id="Description3">
                       <h4>{item.Title}</h4>
-                      <p>{item.Description.slice(0,100)+"..."}</p>
+                      <p>{item.Description.slice(0,95)+"..."}</p>
                     </div>
                   </div>
                   </NavLink>
@@ -46,7 +47,7 @@ function Hollywood(){
         {/* popular right side parent */}
       
         <div className="Rparent1">
-          <h1 className="side2">Top Post</h1>
+          <h1 className="side2 side">Top Post</h1>
         
           {received
             .filter(
@@ -63,6 +64,7 @@ function Hollywood(){
                 height="240px"
                 width="390px"
               />
+              
               <div  className="special-description">
                 <p>{item.Description.slice(0,140)+"..."}</p>
                 <h3 id="number">{index+1}</h3>

@@ -50,7 +50,7 @@ function Technology(){
         {/* popular right side parent */}
       
         <div className="Rparent1">
-          <h1 className="side2">Top Post</h1>
+          <h1 className="side2 side">Top Post</h1>
           {received
             .filter(
               (item) => item.id === 59 && item.Category === "technology"
@@ -98,7 +98,7 @@ function Technology(){
               );
             })}
         </div>
-        <div className="Advertise2 side2"><h2 className="Adtext2">Advertisement</h2></div>
+        <div className="Advertise2 side2 "><h2 className="Adtext2">Advertisement</h2></div>
         <div className="bigimage2">
         {received.filter((item)=>item.id===46).map((item,index)=>{
              return(
