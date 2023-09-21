@@ -86,7 +86,7 @@ const ContextApi=(props)=>{
         id: 10,
         Title: "Kabhi Khushi Kabhie Gham",
         Category: "Bollywood",
-      image: "https://moviekoop.com/Images/Cover_Photos/kabhi-kushi-kabhi-gham.jpg",
+      image: "https://resize.indiatvnews.com/en/resize/newbucket/730_-/2017/12/0fd0fb63a60e921e3ea7c72b5a89830e-ls-xl-1513333759.jpg",
       Description: "Kabhi Khushi Kabhie Gham is a family drama film directed by Karan Johar. It revolves around the wealthy Raichand family and explores the relationships and conflicts within the family members. The film features an ensemble cast and themes of love, family, and reconciliation"
     },
     {
@@ -583,21 +583,21 @@ const ContextApi=(props)=>{
               id: 77,
               Title: "Smart Home Security",
               Category: "Home",
-              image: "https://cdn.vectorstock.com/i/1000x1000/82/85/smart-home-security-devices-and-systems-vector-34648285.webp",
+              image: "https://crystalheatingandcooling.ca/wp-content/uploads/2021/06/Crystal-smart-home-security-system-1200x480.jpeg",
               Description: "Protect your home with our smart home security solutions. Monitor your property remotely and receive instant alerts for peace of mind. Our cutting-edge devices and systems provide 24/7 security, ensuring your loved ones and valuables are safe at all times."
             },
             {
               id: 78,
               Category: "Home",
               Title: "Inception",
-              image: "https://irs.www.warnerbros.com/keyart-jpeg/inception_keyart.jpg",
+              image: "https://images3.alphacoders.com/610/thumbbig-610318.webp",
               Description: "\"Inception\" is a science fiction heist thriller film directed by Christopher Nolan. Dom Cobb, played by Leonardo DiCaprio, is a thief who specializes in stealing information by entering the subconscious minds of his targets."
             },
             {
                 id: 79,
                 Title: "Kabhi Khushi Kabhie Gham",
                 Category: "Home",
-                image: "https://cinemachaat.files.wordpress.com/2014/04/k3g.jpg?w=350&zoom=2",
+                image: "https://resize.indiatvnews.com/en/resize/newbucket/730_-/2017/12/0fd0fb63a60e921e3ea7c72b5a89830e-ls-xl-1513333759.jpg",
                 Description: "Kabhi Khushi Kabhie Gham is a family drama film directed by Karan Johar. It tells the story of the rich Raichand family and the relationships and conflicts within. Join this emotional journey of love, family, and reconciliation that spans generations."
               },
             {

@@ -53,7 +53,7 @@ function Home() {
                 />
                 <div id="Description2">
                 <h2>{item.Title}</h2>
-                  <p>{item.Description.slice(0,150)+"..."}</p>
+                  <p>{item.Description.slice(0,110)+"..."}</p>
                 </div>
                 </NavLink>
               </div>
@@ -67,7 +67,7 @@ function Home() {
 
         <div id="Lparent1">
           <h1 className="side">Latest Articles</h1>
-          {received.filter((item) => item.id >= 76 && item.id <= 83 &&item.Category === "Home")
+          {received.filter((item) => item.id >= 76 && item.id <= 84 &&item.Category === "Home")
 
             .map((item, index) => {
               return (
