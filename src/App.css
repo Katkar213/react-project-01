@@ -945,7 +945,10 @@ width:99vw;
     flex-direction: row;
   }
  .Advertise2{
-  height:80vh;
+  height:75vh;
+  width:95vw;
+  margin: auto;
+  margin-bottom: 20px;
  }
   .none{
    font-size: 30px;
@@ -996,7 +999,7 @@ width:99vw;
   }
   .Advertise{
     margin: auto;
-    width:93vw;
+    width:98vw;
     margin-top: 20px;
   }
   .home-right-discription{
