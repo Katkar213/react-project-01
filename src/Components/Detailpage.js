@@ -2,12 +2,13 @@
 
 import { Store } from "../ContextApi/ContextApi";
 import { useContext } from "react";
-import { useParams } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 import { NavLink } from "react-router-dom";
 
 
-function Detailpage(){
 
+function Detailpage(){
+    const Navi=useNavigate();
     const [received] = useContext(Store);
     const {id}=useParams();
     const id2=parseInt(id)
@@ -101,8 +102,8 @@ function Detailpage(){
             );
           })}
       </div>
-     
-
+     <div className="btndiv" onClick={()=>Navi(-1)}><button className="btn">Back</button></div>
+      
      
         </>
     )
