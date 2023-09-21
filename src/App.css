@@ -421,7 +421,7 @@ span{
 
 
 .bigimage2 img{
-  height:430px;
+  height:370px;
   width:695px;
   border-radius: 3%;
   /* margin-bottom: 2rem; */
@@ -896,9 +896,15 @@ footer ul{
   .smallimage img{
    width:46%;
   }
-  .special-description2 {
-    width: 88vw;
+
+.special-description {
+  width: 89vw;
 }
+.homerightsideimage{
+  width:25vw;
+  height: 15vh;
+}
+
   .Adtext2{
     margin-top: 60%;
   }
@@ -926,13 +932,24 @@ width:99vw;
    margin-top: -15px;
   }
   #leftsideimage{
-  width:20vw;
+  width:23vw;
   display: block;
+  height: 15vh;
   }
   .home-left-description{
    display: block;
    width:44vw;
   }
+  .linkdes3{
+    width:90vw;
+  }
+  .special-description2{
+    width:89vw;
+  }
+  .linkdes{
+    width:90vw;
+  }
+ 
   
 }
 

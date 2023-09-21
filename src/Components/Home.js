@@ -67,7 +67,7 @@ function Home() {
 
         <div id="Lparent1">
           <h1 className="side">Latest Articles</h1>
-          {received.filter((item) => item.id >= 77 && item.id <= 83 &&item.Category === "Home")
+          {received.filter((item) => item.id >= 76 && item.id <= 83 &&item.Category === "Home")
 
             .map((item, index) => {
               return (
@@ -138,7 +138,7 @@ function Home() {
             })}
           {received
             .filter(
-              (item) => item.id >= 81 && item.id <= 84 && item.Category === "Home"
+              (item) => item.id >= 81 && item.id <= 83 && item.Category === "Home"
             )
             .map((item, index) => {
               return (
