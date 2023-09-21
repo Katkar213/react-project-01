@@ -185,7 +185,7 @@ function Home() {
                 />
                 <div id="Description2">
                  <h2>{item.Title}</h2>
-                  <p>{item.Description.slice(0,90)}</p>
+                  <p>{item.Description.slice(0,90)+"..."}</p>
                 </div>
                 </NavLink>
               </div>

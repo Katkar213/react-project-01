@@ -205,6 +205,13 @@ margin: 1%;
   margin: auto;
 
 }
+#special-img{
+ 
+    width:98%;
+    height: 50vh;
+    margin: auto;
+
+}
 .special-description2{
   width:43vw;
 }
@@ -314,7 +321,7 @@ font-size: 30px;
   text-align: center;
 }
 .Adtext{
-  margin-top: 40%;
+  margin-top: 30%;
 }
 
 
@@ -443,7 +450,7 @@ span{
 
 
 .Adtext2{
-  margin-top: 90%;
+  margin-top: 60%;
 }
  /* .hamberger{
   height: 50px;
@@ -480,11 +487,12 @@ color:black;
   flex-direction: column;
   width:650px;
   align-items: center;
+  margin: auto;
   
 }
 .special-description{
   width:44vw;
-  height:130px;
+  /* height:130px; */
   display:flex;
   text-align: left;
   justify-content:space-between ;
@@ -910,7 +918,7 @@ footer ul{
   }
 
 .special-description {
-  width: 85vw;
+  width: 88vw;
 }
 .homerightsideimage{
   width:25vw;
@@ -984,7 +992,7 @@ width:99vw;
   }
   .linkdes{
     width:93vw;
-    gap:0px;
+    gap:20px;
   }
   .Advertise{
     margin: auto;
