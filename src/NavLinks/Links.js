@@ -47,17 +47,17 @@ function Links(){
 <div className={(count)?"hambergerlinks show":"hambergerlinks hide"}>
 <ul>
         <li>
-    <NavLink style={({isActive})=>({color:(isActive)?"lightGrey":"black"})} to="/" className="link" >Home</NavLink></li>
+    <NavLink style={({isActive})=>({color:(isActive)?"lightGrey":"black"})} onClick={()=>setCount(!count)} to="/" className="link" >Home</NavLink></li>
         <li>
-    <NavLink style={({isActive})=>({color:(isActive)?"lightGrey":"black"})} to="/Hollywood" className="link" >Hollywood</NavLink></li>
+    <NavLink style={({isActive})=>({color:(isActive)?"lightGrey":"black"})}  onClick={()=>setCount(!count)}  to="/Hollywood" className="link" >Hollywood</NavLink></li>
         <li>
-    <NavLink style={({isActive})=>({color:(isActive)?"lightGrey":"black"})} to="/Bollywood" className="link" >Bollywood</NavLink></li>
+    <NavLink style={({isActive})=>({color:(isActive)?"lightGrey":"black"})}  onClick={()=>setCount(!count)}  to="/Bollywood" className="link" >Bollywood</NavLink></li>
         <li>
-    <NavLink style={({isActive})=>({color:(isActive)?"lightGrey":"black"})} to="/Technology"  className="link">Technology </NavLink></li>
+    <NavLink style={({isActive})=>({color:(isActive)?"lightGrey":"black"})}  onClick={()=>setCount(!count)}  to="/Technology"  className="link">Technology </NavLink></li>
         <li>
-    <NavLink style={({isActive})=>({color:(isActive)?"lightGrey":"black"})} to="/Fitness"  className="link">Fitness</NavLink></li>
+    <NavLink style={({isActive})=>({color:(isActive)?"lightGrey":"black"})}  onClick={()=>setCount(!count)}  to="/Fitness"  className="link">Fitness</NavLink></li>
         <li>
-        <NavLink style={({isActive})=>({color:(isActive)?"lightGrey":"black"})} to="/Food"  className="link">Food</NavLink></li>
+        <NavLink style={({isActive})=>({color:(isActive)?"lightGrey":"black"})}  onClick={()=>setCount(!count)}  to="/Food"  className="link">Food</NavLink></li>
         
 </ul>
 </div>
