@@ -1,12 +1,12 @@
 
-
 import React, { useContext } from "react";
 import {Store} from "../ContextApi/ContextApi"
 import {NavLink} from "react-router-dom"
+import "../App.css";
 
 function Bollywood() {
+  
   const [received] = useContext(Store);
-  console.log(received);
 
   return (
     <>
@@ -73,7 +73,7 @@ function Bollywood() {
             })}
           {received
             .filter(
-              (item) => item.id >= 77 && item.id <= 82 && item.Category === "Home"
+              (item) => item.id >= 4 && item.id <= 9 && item.Category === "Bollywood"
             )
             .map((item, index) => {
               return (
