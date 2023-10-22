@@ -192,8 +192,7 @@ transition:all 0.2s linear;
   display: flex;
   flex-direction: column;
   gap:15px;
-
-
+  margin: auto;
 }
 .middlecontainerright{
   display: flex;
@@ -528,13 +527,11 @@ color:black;
 }
 .special-description{
   width:38vw;
-  /* height:130px; */
   display:flex;
   text-align: left;
   justify-content:space-between ;
   gap:1vw;
   flex-direction:row ;
-  /* border: 2px solid black; */
   
 }
 .parent2-top-post{
@@ -657,7 +654,6 @@ li:hover{
   gap:9px;
   
   }
- 
   .show{
     display:block;
   }
